@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mon CV</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.formation-dropdown').hide();
+			$('#formation-link').hover(function() {
+				$('.formation-dropdown').stop(true, true).slideDown('fast');
+			}, function() {
+				$('.formation-dropdown').stop(true, true).slideUp('fast');
+			});
+		});
+	</script>
+	<style>
+		body {
+			width: 70%;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Mon CV</h1>
+		<nav>
+		  <ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="qui-suis-je.html">Qui suis-je</a></li>
+			<li><a href="competences.html">Compétences</a></li>
+			<li>
+			  <a href="formation.html">Formation</a>
+			  <ul class="formation-dropdown">
+				<li><a href="formation-initiale.html">Formation initiale</a></li>
+				<li><a href="formation-specifique.html">Formation spécifique</a></li>
+			  </ul>
+			</li>
+			<li><a href="mes-atouts.html">Mes atouts</a></li>
+			<li><a href="changement.html">Changement de cap</a></li>
+			<li><a href="contact.html">Me contacter</a></li>
+		  </ul>
+		</nav>
+	  </header>	  
+	<main>
+		<section>
+			<h2>2014 : Objectif terre !</h2>
+			<img src="images/n3.jpg" alt="Ma photo" style="width: 40%;">
+			<p>Les raisons qui m'ont poussées à changer complètement de voie sont multiples. J'aurais plaisir à les évoquer avec vous si le coeur vous en dit. Le fait est, qu'au mois de janvier 2013, j'initie ce changement pour me former au métier de tourneur en céramique.</p>
+            <P>J'effectue ma formation au <a href="https://www.cnifop.com/">CNIFOP</a> et passe mon C.A.P en juin 2014, avec l'idée de dédier mon travail à l'univers du thé.</P>
+            <P>L'expérience est incroyable, tant sur le plan personnel que professionnel.</P>
+            <p>En 2018 le Collectif National des Céramistes me demande de prendre la présidence de l'association qui comprend 800 membres. Les compétences acquises lors de mes activités précédentes refont surface. Après avoir pris connaissance du fonctionnement, je mets en place des outils de travail à distance et instaure une dynamique collaborative pour gérer 10 commissions différentes, dont les acteurs sont présents sur tout le territoire français.</p>
+            <p>La période COVID arrive et grand nombre de professionnels de la céramique souffrent de cette situation. Je crée un système d'accompagnement individuel pour répondre au besoin des adhérents, tant sur le plan de la défense de leur activité auprès des pouvoirs publics, que dans la recherche de solutions commerciales à court, moyen et long termes. Dans le même laps de temps, la DG Santé de la Commission Européenne, prévoit une évolution de la réglementation sur les Matériaux en Contact avec les Denrées Alimentaires. J'organise avec des personnes compétentes dans ce domaine, une commission qui sera en charge de faire valoir et de défendre nos intérêts auprès de la Commission Européenne.</p>
+            <p>Ce travaille associatif bénévole est sans doute une des réussites dont je suis le plus fier. D'une part car l'organisation et la visibilité de la profession s'en trouve accrue, mais aussi parce que je ressors de cette expérience profondément changé.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3W9g7_UAsrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</section>
+	</main>
+	<div class="trait"></div>
+</body>
+</html>
