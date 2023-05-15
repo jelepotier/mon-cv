@@ -109,5 +109,43 @@ nav a:hover {
 	border-bottom: 3px solid var(--couleur-principale);
 	margin-bottom: 40px;
   }
+
+/* Styles pour les écrans de bureau */
+@media (min-width: 992px) {
+	/* Utilisez les grilles CSS pour positionner les éléments */
+	.container {
+	  display: grid;
+	  grid-template-columns: 1fr 2fr;
+	  grid-gap: 20px;
+	}
+  }
   
+  /* Styles pour les tablettes */
+  @media (min-width: 768px) and (max-width: 991px) {
+	/* Réduire la taille de police pour une meilleure lisibilité */
+	h1, h2, h3 {
+	  font-size: 1.5rem;
+	}
+  }
+  
+  /* Styles pour les smartphones */
+  @media (max-width: 767px) {
+	/* Utilisez les grilles CSS pour positionner les éléments */
+	.container {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  grid-gap: 20px;
+	}
+  
+	/* Réduire la taille de police pour une meilleure lisibilité */
+	h1, h2, h3 {
+	  font-size: 1.2rem;
+	}
+  
+	/* Ajuster la taille des images pour une meilleure mise en page sur les petits écrans */
+	img {
+	  max-width: 100%;
+	  height: auto;
+	}
+  }
   
