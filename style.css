@@ -1,0 +1,113 @@
+/* variables de couleurs */
+:root {
+	--couleur-principale: #8B0000;
+	--couleur-secondaire: #F5DEB3;
+	--couleur-texte: #fff;
+	--couleur-background: #fff;
+	--couleur-hover: #333;
+}
+
+/* styles généraux */
+body {
+	font-family: Arial, sans-serif;
+	background-color: var(--couleur-secondaire);
+}
+
+h1 {
+	color: var(--couleur-texte);
+	text-align: center;
+	margin-top: 30px;
+}
+
+h2 {
+	color: var(--couleur-principale);
+	text-align: left;
+	margin-top: 30px;
+}
+
+/* styles pour le bandeau de navigation */
+header {
+	background-color: var(--couleur-principale);
+	padding: 10px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav li:last-child {
+	margin-right: 0;
+}
+
+nav a {
+	color: var(--couleur-texte);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: var(--couleur-secondaire);
+	background-color: var(--couleur-hover);
+}
+
+/* styles pour le dropdown de formation */
+.formation-dropdown {
+	position: absolute;
+	z-index: 1;
+	display: none;
+	background-color: var(--couleur-principale);
+	min-width: 160px;
+}
+
+.formation-dropdown li {
+	display: block;
+}
+
+.formation-dropdown li a {
+	color: var(--couleur-texte);
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+}
+
+.formation-dropdown li a:hover {
+	background-color: var(--couleur-hover);
+}
+
+/* styles pour la page Mes Atouts */
+.atouts {
+	margin: 50px auto;
+	max-width: 600px;
+}
+
+.atouts ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.atout {
+	border: 1px solid var(--couleur-hover);
+	background-color: var(--couleur-background);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.atout:first-line {
+	font-weight: bold;
+}
+
+/* styles pour le trait en bas de page */
+.trait {
+	border-bottom: 3px solid var(--couleur-principale);
+	margin-bottom: 40px;
+  }
+  
+  

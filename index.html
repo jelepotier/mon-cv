@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mon CV</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.formation-dropdown').hide();
+			$('#formation-link').hover(function() {
+				$('.formation-dropdown').stop(true, true).slideDown('fast');
+			}, function() {
+				$('.formation-dropdown').stop(true, true).slideUp('fast');
+			});
+		});
+	</script>
+	<style>
+		body {
+			width: 70%;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Mon CV</h1>
+		<nav>
+		  <ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="qui-suis-je.html">Qui suis-je</a></li>
+			<li><a href="competences.html">Compétences</a></li>
+			<li>
+			  <a href="formation.html">Formation</a>
+			  <ul class="formation-dropdown">
+				<li><a href="formation-initiale.html">Formation initiale</a></li>
+				<li><a href="formation-specifique.html">Formation spécifique</a></li>
+			  </ul>
+			</li>
+			<li><a href="mes-atouts.html">Mes atouts</a></li>
+			<li><a href="contact.html">Me contacter</a></li>
+		  </ul>
+		</nav>
+	  </header>	  
+	<main>
+		<section>
+			<h2>Bienvenue sur mon CV en ligne !</h2>
+			<img src="images/n1.jpg" alt="Ma photo" style="width: 40%;">
+			<p>Vous cherchez la bonne personne pour collaborer à la réussite de votre projet.</p>
+			<p>Vous souhaitez développer votre activité et vous avez besoin d'une aide opérationnelle ou d'un accompagnement personnalisé.</p>
+			<p>Je suis spécialisé dans la formation / conseil en management et en efficacité collective, avec une expertise dans la conduite de réunion comme outils de développement global de l'entreprise.</p>
+			<p> Je souhaite tirer parti de la maturité et des compétences acquises pour m'investir dans des projets enthousiasmants, tant en interne qu'en externe.</p>
+			<p>En parcourant les pages de ce site, vous en saurez plus sur moi et mon parcours professionnel.</p>
+			<p>Je reste à votre écoute !</p>
+		</section>
+	</main>
+	<div class="trait"></div>
+</body>
+</html>

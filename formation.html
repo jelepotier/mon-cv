@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mon CV</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.formation-dropdown').hide();
+			$('#formation-link').hover(function() {
+				$('.formation-dropdown').stop(true, true).slideDown('fast');
+			}, function() {
+				$('.formation-dropdown').stop(true, true).slideUp('fast');
+			});
+		});
+	</script>
+	<style>
+		body {
+			width: 70%;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Mon CV</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="qui-suis-je.html">Qui suis-je</a></li>
+				<li><a href="competences.html">Compétences</a></li>
+				<li id="formation-link">
+					<a href="formation.html">Formation</a>
+					<ul class="formation-dropdown">
+						<li><a href="formation-initiale.html">Formation initiale</a></li>
+						<li><a href="formation-specifique.html">Formation spécifique</a></li>
+					</ul>
+				</li>
+				<li><a href="mes-atouts.html">Mes atouts</a></li>
+				<li><a href="contact.html">Me contacter</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+	</main>
+	<div class="trait"></div>
+</body>
+</html>
