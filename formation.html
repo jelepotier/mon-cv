@@ -4,21 +4,15 @@
 	<meta charset="utf-8">
 	<title>Mon CV</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('.formation-dropdown').hide();
-			$('#formation-link').hover(function() {
-				$('.formation-dropdown').stop(true, true).slideDown('fast');
-			}, function() {
-				$('.formation-dropdown').stop(true, true).slideUp('fast');
-			});
-		});
-	</script>
 	<style>
 		body {
 			width: 70%;
 			margin: 0 auto;
+		}
+		.trait {
+			border-top: 1px solid #ccc;
+			margin-top: 20px;
+			margin-bottom: 40px;
 		}
 	</style>
 </head>
@@ -30,13 +24,7 @@
 				<li><a href="index.html">Accueil</a></li>
 				<li><a href="qui-suis-je.html">Qui suis-je</a></li>
 				<li><a href="competences.html">Compétences</a></li>
-				<li id="formation-link">
-					<a href="formation.html">Formation</a>
-					<ul class="formation-dropdown">
-						<li><a href="formation-initiale.html">Formation initiale</a></li>
-						<li><a href="formation-specifique.html">Formation spécifique</a></li>
-					</ul>
-				</li>
+				<li><a href="formation.html">Formation</a></li>
 				<li><a href="mes-atouts.html">Mes atouts</a></li>
 				<li><a href="changement.html">Changement de cap</a></li>
 				<li><a href="contact.html">Me contacter</a></li>
@@ -44,6 +32,41 @@
 		</nav>
 	</header>
 	<main>
+		<h2>Formation initiale</h2>
+		<ul>
+			<li>
+				<p>1994-1996 - <strong>Master de Gestion et Management des Hôtels et des Hébergements de Loisir</strong> - Université de Savoie - Chambéry</p>
+				<p>Cursus sur 2 ans avec 6 mois à l'étranger, à suivre les cours de l'Université de Cardiff - Pays de Galles. - Mémoire : "Etude de faisabilité d'un restaurant gastronomique au fond du lac d'Annecy". - Diplôme obtenu - <strong>Mention Bien</strong></p>
+			</li>
+			<li>
+				<p>1992-1994 - <strong>B.T.S. Hôtellerie Restauration</strong> - Option hébergement - Ecole Hôtelière du Touquet Paris Plage - Mémoire : "Création d'une politique enfant dans les hôtels Mercure" - Note obtenue : 20/20</p>
+			</li>
+			<li>
+				<p>1990-1992 - <strong>Brevet de Technicien Hôtelier</strong> - Option hébergement - Institution Ste Jeanne d’Arc - Aulnoye-Aymeries.</p>
+			</li>
+			<li>
+				<p>1988-1990 - <strong>B.E.P. Hôtellerie Restauration</strong> - Option service - Collège St Martin - Amiens</p>
+			</li>
+		</ul>
+		<div class="trait"></div>
+		<h2>Formation spécifique</h2>
+		<ul>
+			<li>
+				<p>2002-2004 - <strong>Coach personnel et professionnel</strong> - Coach'up Institut - Paris. Sans être géniale, cette formation m'a permis de démarrer mon activité de consultant.</p>
+			</li>
+			<li>
+				<p>2005 - <strong>Coach systèmique</strong> - <a href="https://www.metasysteme-coaching.fr/">Metasystème</a>, une école dirigée par Alain Cardon, maitre coach certifié de l'International Coach Federation. Cette formation est, indéniablement, la plus pertinente et la plus efficace que j'ai pu suivre dans ce domaine. C'est grâce à elle que je me suis spécialisé dans l'accompagnement des comités de direction, par le biais de la conduite de réunion.</p>
+			</li>
+			<li>
+				<p>2006 - <strong>Prise de parole en public</strong> - <a href="https://www.dalecarnegie.fr/formation-professionnelle/prise-de-parole-en-public/">Dale Carnegie</a>, une formation brillante de simplicité et d'efficacité. La suivre m'a permis de mettre en valeur le contenu de mes prises de parole. C'est un atout indéniable pour faire entendre ses arguments et faire passer un message.</p>
+			</li>
+			<li>
+				<p>2008 - <strong>Analyse Transactionnelle</strong> - Institut De Développement Personnel et Professionnel - Grenoble. Une formation très riche, qui amène un éclairage précis sur des situations complexes et permet de mieux les cerner et donc de les résoudre, si besoin...</p>
+			</li>
+			<li>
+				<p>2010 - <strong>Approche de la constellation familiale</strong> - Avec le Dr <a href="http://constellations-marcstuit.com/index.php?id=marcstuit">Marc Stuit </a> à Lyon. Une formation très concrète qui vient consolider les acquis.</p>
+			</li>
+		</ul>
 	</main>
 	<div class="trait"></div>
 </body>

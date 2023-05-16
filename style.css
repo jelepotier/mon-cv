@@ -57,30 +57,6 @@ nav a:hover {
 	background-color: var(--couleur-hover);
 }
 
-/* styles pour le dropdown de formation */
-.formation-dropdown {
-	position: absolute;
-	z-index: 1;
-	display: none;
-	background-color: var(--couleur-principale);
-	min-width: 160px;
-}
-
-.formation-dropdown li {
-	display: block;
-}
-
-.formation-dropdown li a {
-	color: var(--couleur-texte);
-	padding: 10px;
-	text-decoration: none;
-	display: block;
-}
-
-.formation-dropdown li a:hover {
-	background-color: var(--couleur-hover);
-}
-
 /* styles pour la page Mes Atouts */
 .atouts {
 	margin: 50px auto;
