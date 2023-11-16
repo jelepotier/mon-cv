@@ -1,138 +1,191 @@
-/* variables de couleurs */
-:root {
-    --couleur-principale: #333;
-    --couleur-texte: white;
-    --couleur-background: #f4f4f4;
-    --couleur-hover: #555;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    <style>
+        /* variables de couleurs */
+        :root {
+            --couleur-principale: #333;
+            --couleur-texte: white;
+            --couleur-background: #f4f4f4;
+            --couleur-hover: #555;
+        }
 
-/* styles généraux */
-body {
-    width: 70%;
-    margin: 0 auto;
-    font-family: 'Arial', sans-serif;
-    background-color: var(--couleur-background);
-}
+        /* styles généraux */
+        body {
+            width: 70%;
+            margin: 0 auto;
+            font-family: 'Arial', sans-serif;
+            background-color: var(--couleur-background);
+        }
 
-header {
-    background-color: var(--couleur-principale);
-    color: var(--couleur-texte);
-    text-align: center;
-    padding: 1em;
-}
+        header {
+            background-color: var(--couleur-principale);
+            color: var(--couleur-texte);
+            text-align: center;
+            padding: 1em;
+        }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--couleur-principale);
-}
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: var(--couleur-principale);
+        }
 
-nav li {
-    float: left;
-}
+        nav li {
+            float: left;
+        }
 
-nav a {
-    display: block;
-    color: var(--couleur-texte);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s; /* Transition pour un changement de couleur en douceur */
-}
+        nav a {
+            display: block;
+            color: var(--couleur-texte);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s; /* Transition pour un changement de couleur en douceur */
+        }
 
-nav a:hover {
-    background-color: var(--couleur-hover);
-}
+        nav a:hover {
+            background-color: var(--couleur-hover);
+        }
 
-main {
-    padding: 1em;
-}
+        main {
+            padding: 1em;
+        }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
 
-.trait {
-    border-top: 1px solid var(--couleur-principale);
-    margin-top: 20px;
-}
+        .trait {
+            border-top: 1px solid var(--couleur-principale);
+            margin-top: 20px;
+        }
 
-/* Styles pour les écrans de bureau */
-@media only screen and (max-width: 768px) {
-    body {
-        width: 90%;
-    }
+        /* Styles pour les écrans de bureau */
+        @media only screen and (max-width: 768px) {
+            body {
+                width: 90%;
+            }
 
-    header {
-        padding: 0.5em;
-    }
+            header {
+                padding: 0.5em;
+            }
 
-    nav a {
-        padding: 10px;
-    }
+            nav a {
+                padding: 10px;
+            }
 
-    img {
-        width: 100%;
-    }
-}
+            img {
+                width: 100%;
+            }
+        }
 
-/* Ajout de styles spécifiques pour les smartphones */
-@media (max-width: 767px) {
-    nav ul {
-        text-align: center; /* Centrer les éléments du menu */
-        display: none; /* Masquer les éléments du menu par défaut */
-    }
+        /* Ajout de styles spécifiques pour les smartphones */
+        @media (max-width: 767px) {
+            nav ul {
+                text-align: center; /* Centrer les éléments du menu */
+                display: none; /* Masquer les éléments du menu par défaut */
+            }
 
-    nav li {
-        display: block;
-        margin: 0;
-    }
+            nav li {
+                display: block;
+                margin: 0;
+            }
 
-    nav a {
-        display: block;
-        padding: 10px;
-        margin-bottom: 5px; /* Ajouter de l'espace entre les liens du menu */
-        border-bottom: 1px solid var(--couleur-hover); /* Ajouter une bordure entre les liens */
-        color: var(--couleur-texte);
-        text-decoration: none;
-        font-weight: bold;
-    }
+            nav a {
+                display: block;
+                padding: 10px;
+                margin-bottom: 5px; /* Ajouter de l'espace entre les liens du menu */
+                border-bottom: 1px solid var(--couleur-hover); /* Ajouter une bordure entre les liens */
+                color: var(--couleur-texte);
+                text-decoration: none;
+                font-weight: bold;
+            }
 
-    nav li:last-child a {
-        margin-bottom: 0; /* Ne pas ajouter d'espace sous le dernier lien */
-        border-bottom: none; /* Ne pas ajouter de bordure sous le dernier lien */
-    }
+            nav li:last-child a {
+                margin-bottom: 0; /* Ne pas ajouter d'espace sous le dernier lien */
+                border-bottom: none; /* Ne pas ajouter de bordure sous le dernier lien */
+            }
 
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        text-align: center;
-        margin-top: 10px;
-        color: var(--couleur-texte);
-    }
+            .menu-icon {
+                display: block;
+                cursor: pointer;
+                text-align: center;
+                margin-top: 10px;
+                color: var(--couleur-texte);
+            }
 
-    /* Réduire la taille de police pour une meilleure lisibilité */
-    h1, h2, h3 {
-        font-size: 1.2rem;
-    }
+            /* Réduire la taille de police pour une meilleure lisibilité */
+            h1, h2, h3 {
+                font-size: 1.2rem;
+            }
 
-    /* Ajuster la taille des images pour une meilleure mise en page sur les petits écrans */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+            /* Ajuster la taille des images pour une meilleure mise en page sur les petits écrans */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
 
-    .atouts {
-        margin: 20px auto; /* Ajout de marge sur les petits écrans */
-        max-width: 100%; /* Assurez-vous que la largeur est à 100% sur les petits écrans */
-    }
+            .atouts {
+                margin: 20px auto; /* Ajout de marge sur les petits écrans */
+                max-width: 100%; /* Assurez-vous que la largeur est à 100% sur les petits écrans */
+            }
 
-    .trait {
-        margin-bottom: 20px; /* Réduction de la marge en bas sur les petits écrans */
-    }
-}
+            .trait {
+                margin-bottom: 20px; /* Réduction de la marge en bas sur les petits écrans */
+            }
+        }
+    </style>
+    <!-- Ajouter le script JavaScript pour le menu hamburger -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuIcon = document.querySelector(".menu-icon");
+            var navList = document.querySelector("nav ul");
+
+            menuIcon.addEventListener("click", function () {
+                // Basculez la visibilité des éléments du menu
+                if (navList.style.display === "block") {
+                    navList.style.display = "none";
+                } else {
+                    navList.style.display = "block";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Mon CV</h1>
+        <!-- Ajoutez la classe .menu-icon à un élément qui représente l'icône du menu hamburger -->
+        <div class="menu-icon">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="qui-suis-je.html">Qui suis-je</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="formation.html">Formation</a></li>
+                <li><a href="mes-atouts.html">Mes atouts</a></li>
+                <li><a href="changement.html">Changement de cap</a></li>
+                <li><a href="contact.html">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Collaborateur engagé cherche projets enthousiasmants !</h2>
+            <img src="images/n1.jpg" alt="Ma photo">
+        </section>
+    </main>
+
+    <div class="trait"></div>
+</body>
+</html>
