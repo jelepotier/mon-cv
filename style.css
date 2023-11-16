@@ -1,115 +1,83 @@
 /* variables de couleurs */
 :root {
-    --couleur-principale: #8B0000;
-    --couleur-secondaire: #F5DEB3;
-    --couleur-texte: #fff;
-    --couleur-background: #fff;
-    --couleur-hover: #333;
+    --couleur-principale: #333;
+    --couleur-texte: white;
+    --couleur-background: #f4f4f4;
+    --couleur-hover: #555;
 }
 
 /* styles généraux */
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--couleur-secondaire);
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--couleur-background);
 }
 
-h1 {
-    color: var(--couleur-texte);
-    text-align: center;
-    margin-top: 30px;
-}
-
-h2 {
-    color: var(--couleur-principale);
-    text-align: left;
-    margin-top: 30px;
-}
-
-/* styles pour le bandeau de navigation */
 header {
     background-color: var(--couleur-principale);
-    padding: 10px;
+    color: var(--couleur-texte);
+    text-align: center;
+    padding: 1em;
 }
 
 nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    list-style: none;
+    overflow: hidden;
+    background-color: var(--couleur-principale);
 }
 
 nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav li:last-child {
-    margin-right: 0;
+    float: left;
 }
 
 nav a {
+    display: block;
     color: var(--couleur-texte);
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-weight: bold;
+    transition: background-color 0.3s; /* Transition pour un changement de couleur en douceur */
 }
 
 nav a:hover {
-    color: var(--couleur-secondaire);
     background-color: var(--couleur-hover);
 }
 
-/* styles pour la page Mes Atouts */
-.atouts {
-    margin: 50px auto;
-    max-width: 600px;
+main {
+    padding: 1em;
 }
 
-.atouts ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.atout {
-    border: 1px solid var(--couleur-hover);
-    background-color: var(--couleur-background);
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.atout a {
-    color: var(--couleur-principale);
-}
-
-.atout a:hover {
-    color: var(--couleur-secondaire);
-    background-color: var(--couleur-hover);
-}
-
-.atout:first-line {
-    font-weight: bold;
-}
-
-/* styles pour le trait en bas de page */
 .trait {
-    border-bottom: 3px solid var(--couleur-principale);
-    margin-bottom: 40px;
+    border-top: 1px solid var(--couleur-principale);
+    margin-top: 20px;
 }
 
 /* Styles pour les écrans de bureau */
-@media (min-width: 992px) {
-    /* Utilisez les grilles CSS pour positionner les éléments */
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 20px;
+@media only screen and (max-width: 768px) {
+    body {
+        width: 90%;
     }
-}
 
-/* Styles pour les tablettes */
-@media (min-width: 768px) and (max-width: 991px) {
-    /* Réduire la taille de police pour une meilleure lisibilité */
-    h1, h2, h3 {
-        font-size: 1.5rem;
+    header {
+        padding: 0.5em;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    img {
+        width: 100%;
     }
 }
 
@@ -117,18 +85,12 @@ nav a:hover {
 @media (max-width: 767px) {
     nav ul {
         text-align: center; /* Centrer les éléments du menu */
+        display: none; /* Masquer les éléments du menu par défaut */
     }
 
     nav li {
-        display: none; /* Masquer les éléments de menu par défaut */
-        margin: 0;
-    }
-
-    .menu-icon {
         display: block;
-        cursor: pointer;
-        text-align: center;
-        margin-top: 10px;
+        margin: 0;
     }
 
     nav a {
@@ -144,6 +106,14 @@ nav a:hover {
     nav li:last-child a {
         margin-bottom: 0; /* Ne pas ajouter d'espace sous le dernier lien */
         border-bottom: none; /* Ne pas ajouter de bordure sous le dernier lien */
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 10px;
+        color: var(--couleur-texte);
     }
 
     /* Réduire la taille de police pour une meilleure lisibilité */
