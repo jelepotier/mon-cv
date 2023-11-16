@@ -9,8 +9,8 @@
         body {
             width: 70%;
             margin: 0 auto;
-            font-family: 'Arial', sans-serif; /* Ajout d'une police de caractères par défaut */
-            background-color: #f4f4f4; /* Ajout d'une couleur de fond */
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
         }
 
         header {
@@ -38,11 +38,11 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            transition: background-color 0.3s; /* Transition pour un changement de couleur en douceur */
         }
 
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #555;
         }
 
         main {
@@ -50,10 +50,10 @@
         }
 
         img {
-            max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur de son conteneur */
-            height: auto; /* Ajuste automatiquement la hauteur pour conserver les proportions */
-            display: block; /* Élimine l'espace réservé sous l'image */
-            margin: 0 auto; /* Centre l'image */
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
 
         .trait {
@@ -63,7 +63,7 @@
 
         @media only screen and (max-width: 768px) {
             body {
-                width: 90%; /* Ajustez la largeur pour les écrans plus petits */
+                width: 90%;
             }
 
             header {
@@ -75,7 +75,7 @@
             }
 
             img {
-                width: 100%; /* Ajustez la largeur de l'image pour les écrans plus petits */
+                width: 100%;
             }
         }
     </style>
