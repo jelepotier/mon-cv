@@ -121,12 +121,6 @@ img {
         font-size: 1.2rem;
     }
 
-    /* Ajuster la taille des images pour une meilleure mise en page sur les petits écrans */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
     .atouts {
         margin: 20px auto; /* Ajout de marge sur les petits écrans */
         max-width: 100%; /* Assurez-vous que la largeur est à 100% sur les petits écrans */
@@ -137,7 +131,7 @@ img {
     }
     
     .img {
-        width: 60%; /* Ajustez la valeur selon vos préférences */
+        width: 70%; /* Ajustez la valeur selon vos préférences */
         margin: 0 auto; /* Centre l'image sur l'écran */
         display: block; /* Assure que l'image est un élément de bloc pour appliquer la marge automatique */
     }
