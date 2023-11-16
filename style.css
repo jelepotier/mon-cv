@@ -135,4 +135,10 @@ img {
     .trait {
         margin-bottom: 20px; /* Réduction de la marge en bas sur les petits écrans */
     }
+    
+    .img {
+        width: 60%; /* Ajustez la valeur selon vos préférences */
+        margin: 0 auto; /* Centre l'image sur l'écran */
+        display: block; /* Assure que l'image est un élément de bloc pour appliquer la marge automatique */
+    }
 }
