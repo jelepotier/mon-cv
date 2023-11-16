@@ -131,7 +131,7 @@ img {
     }
     
     .img {
-        width: 100%; /* Ajustez la valeur selon vos préférences */
+        width: 70%; /* Ajustez la valeur selon vos préférences */
         margin: 0 auto; /* Centre l'image sur l'écran */
         display: block; /* Assure que l'image est un élément de bloc pour appliquer la marge automatique */
     }
