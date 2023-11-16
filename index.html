@@ -1,108 +1,138 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        body {
-            width: 70%;
-            margin: 0 auto;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-        }
+/* variables de couleurs */
+:root {
+    --couleur-principale: #333;
+    --couleur-texte: white;
+    --couleur-background: #f4f4f4;
+    --couleur-hover: #555;
+}
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
+/* styles généraux */
+body {
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--couleur-background);
+}
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
+header {
+    background-color: var(--couleur-principale);
+    color: var(--couleur-texte);
+    text-align: center;
+    padding: 1em;
+}
 
-        nav li {
-            float: left;
-        }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--couleur-principale);
+}
 
-        nav a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            transition: background-color 0.3s; /* Transition pour un changement de couleur en douceur */
-        }
+nav li {
+    float: left;
+}
 
-        nav a:hover {
-            background-color: #555;
-        }
+nav a {
+    display: block;
+    color: var(--couleur-texte);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Transition pour un changement de couleur en douceur */
+}
 
-        main {
-            padding: 1em;
-        }
+nav a:hover {
+    background-color: var(--couleur-hover);
+}
 
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
+main {
+    padding: 1em;
+}
 
-        .trait {
-            border-top: 1px solid #333;
-            margin-top: 20px;
-        }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
-        @media only screen and (max-width: 768px) {
-            body {
-                width: 90%;
-            }
+.trait {
+    border-top: 1px solid var(--couleur-principale);
+    margin-top: 20px;
+}
 
-            header {
-                padding: 0.5em;
-            }
+/* Styles pour les écrans de bureau */
+@media only screen and (max-width: 768px) {
+    body {
+        width: 90%;
+    }
 
-            nav a {
-                padding: 10px;
-            }
+    header {
+        padding: 0.5em;
+    }
 
-            img {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Mon CV</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="qui-suis-je.html">Qui suis-je</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="formation.html">Formation</a></li>
-                <li><a href="mes-atouts.html">Mes atouts</a></li>
-                <li><a href="changement.html">Changement de cap</a></li>
-                <li><a href="contact.html">Me contacter</a></li>
-            </ul>
-        </nav>
-    </header>
+    nav a {
+        padding: 10px;
+    }
 
-    <main>
-        <section>
-            <h2>Collaborateur engagé cherche projets enthousiasmants !</h2>
-            <img src="images/n1.jpg" alt="Ma photo">
-        </section>
-    </main>
+    img {
+        width: 100%;
+    }
+}
 
-    <div class="trait"></div>
-</body>
-</html>
+/* Ajout de styles spécifiques pour les smartphones */
+@media (max-width: 767px) {
+    nav ul {
+        text-align: center; /* Centrer les éléments du menu */
+        display: none; /* Masquer les éléments du menu par défaut */
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        margin-bottom: 5px; /* Ajouter de l'espace entre les liens du menu */
+        border-bottom: 1px solid var(--couleur-hover); /* Ajouter une bordure entre les liens */
+        color: var(--couleur-texte);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav li:last-child a {
+        margin-bottom: 0; /* Ne pas ajouter d'espace sous le dernier lien */
+        border-bottom: none; /* Ne pas ajouter de bordure sous le dernier lien */
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 10px;
+        color: var(--couleur-texte);
+    }
+
+    /* Réduire la taille de police pour une meilleure lisibilité */
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Ajuster la taille des images pour une meilleure mise en page sur les petits écrans */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .atouts {
+        margin: 20px auto; /* Ajout de marge sur les petits écrans */
+        max-width: 100%; /* Assurez-vous que la largeur est à 100% sur les petits écrans */
+    }
+
+    .trait {
+        margin-bottom: 20px; /* Réduction de la marge en bas sur les petits écrans */
+    }
+}
