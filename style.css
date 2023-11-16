@@ -1,127 +1,145 @@
 /* variables de couleurs */
 :root {
-	--couleur-principale: #8B0000;
-	--couleur-secondaire: #F5DEB3;
-	--couleur-texte: #fff;
-	--couleur-background: #fff;
-	--couleur-hover: #333;
+    --couleur-principale: #8B0000;
+    --couleur-secondaire: #F5DEB3;
+    --couleur-texte: #fff;
+    --couleur-background: #fff;
+    --couleur-hover: #333;
 }
 
 /* styles généraux */
 body {
-	font-family: Arial, sans-serif;
-	background-color: var(--couleur-secondaire);
+    font-family: Arial, sans-serif;
+    background-color: var(--couleur-secondaire);
 }
 
 h1 {
-	color: var(--couleur-texte);
-	text-align: center;
-	margin-top: 30px;
+    color: var(--couleur-texte);
+    text-align: center;
+    margin-top: 30px;
 }
 
 h2 {
-	color: var(--couleur-principale);
-	text-align: left;
-	margin-top: 30px;
+    color: var(--couleur-principale);
+    text-align: left;
+    margin-top: 30px;
 }
 
 /* styles pour le bandeau de navigation */
 header {
-	background-color: var(--couleur-principale);
-	padding: 10px;
+    background-color: var(--couleur-principale);
+    padding: 10px;
 }
 
 nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav li {
-	display: inline-block;
-	margin-right: 20px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 nav li:last-child {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 nav a {
-	color: var(--couleur-texte);
-	text-decoration: none;
-	font-weight: bold;
+    color: var(--couleur-texte);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px; /* Ajout de marge autour des liens */
 }
 
 nav a:hover {
-	color: var(--couleur-secondaire);
-	background-color: var(--couleur-hover);
+    color: var(--couleur-secondaire);
+    background-color: var(--couleur-hover);
 }
 
 /* styles pour la page Mes Atouts */
 .atouts {
-	margin: 50px auto;
-	max-width: 600px;
+    margin: 50px auto;
+    max-width: 600px;
 }
 
 .atouts ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .atout {
-	border: 1px solid var(--couleur-hover);
-	background-color: var(--couleur-background);
-	padding: 10px;
-	margin-bottom: 20px;
+    border: 1px solid var(--couleur-hover);
+    background-color: var(--couleur-background);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.atout a {
+    color: var(--couleur-principale);
+}
+
+.atout a:hover {
+    color: var(--couleur-secondaire);
+    background-color: var(--couleur-hover);
 }
 
 .atout:first-line {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 /* styles pour le trait en bas de page */
 .trait {
-	border-bottom: 3px solid var(--couleur-principale);
-	margin-bottom: 40px;
-  }
+    border-bottom: 3px solid var(--couleur-principale);
+    margin-bottom: 40px;
+}
 
 /* Styles pour les écrans de bureau */
 @media (min-width: 992px) {
-	/* Utilisez les grilles CSS pour positionner les éléments */
-	.container {
-	  display: grid;
-	  grid-template-columns: 1fr 2fr;
-	  grid-gap: 20px;
-	}
-  }
-  
-  /* Styles pour les tablettes */
-  @media (min-width: 768px) and (max-width: 991px) {
-	/* Réduire la taille de police pour une meilleure lisibilité */
-	h1, h2, h3 {
-	  font-size: 1.5rem;
-	}
-  }
-  
-  /* Styles pour les smartphones */
-  @media (max-width: 767px) {
-	/* Utilisez les grilles CSS pour positionner les éléments */
-	.container {
-	  display: grid;
-	  grid-template-columns: 1fr;
-	  grid-gap: 20px;
-	}
-  
-	/* Réduire la taille de police pour une meilleure lisibilité */
-	h1, h2, h3 {
-	  font-size: 1.2rem;
-	}
-  
-	/* Ajuster la taille des images pour une meilleure mise en page sur les petits écrans */
-	img {
-	  max-width: 100%;
-	  height: auto;
-	}
-  }
-  
+    /* Utilisez les grilles CSS pour positionner les éléments */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
+    }
+}
+
+/* Styles pour les tablettes */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Réduire la taille de police pour une meilleure lisibilité */
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Styles pour les smartphones */
+@media (max-width: 767px) {
+    /* Utilisez les grilles CSS pour positionner les éléments */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    /* Réduire la taille de police pour une meilleure lisibilité */
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Ajuster la taille des images pour une meilleure mise en page sur les petits écrans */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .atouts {
+        margin: 20px auto; /* Ajout de marge sur les petits écrans */
+        max-width: 100%; /* Assurez-vous que la largeur est à 100% sur les petits écrans */
+    }
+
+    .trait {
+        margin-bottom: 20px; /* Réduction de la marge en bas sur les petits écrans */
+    }
+}
