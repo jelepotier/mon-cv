@@ -7,21 +7,8 @@
     <!-- Lien vers la feuille de style externe -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Ajouter le script JavaScript pour le menu hamburger -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var menuIcon = document.querySelector(".menu-icon");
-            var navList = document.querySelector("nav ul");
-
-            menuIcon.addEventListener("click", function () {
-                // Basculez la visibilité des éléments du menu
-                if (navList.style.display === "block") {
-                    navList.style.display = "none";
-                } else {
-                    navList.style.display = "block";
-                }
-            });
-        });
-    </script>
+   <!-- Dans la section head de toutes les pages HTML -->
+<script src="menu.js"></script>
 </head>
 <body>
     <header>
