@@ -120,8 +120,15 @@ nav a:hover {
     }
 
     nav li {
-        display: block;
+        display: none; /* Masquer les éléments de menu par défaut */
         margin: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 10px;
     }
 
     nav a {
@@ -129,6 +136,9 @@ nav a:hover {
         padding: 10px;
         margin-bottom: 5px; /* Ajouter de l'espace entre les liens du menu */
         border-bottom: 1px solid var(--couleur-hover); /* Ajouter une bordure entre les liens */
+        color: var(--couleur-texte);
+        text-decoration: none;
+        font-weight: bold;
     }
 
     nav li:last-child a {
