@@ -4,14 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     menuIcon.addEventListener('click', function () {
         nav.classList.toggle('show');
-
-        // Empêcher le clic de se propager au document
-        event.stopPropagation();
     });
 
-    // Fermer le menu si on clique en dehors de celui-ci
     document.addEventListener('click', function (event) {
-        if (!nav.contains(event.target)) {
+        // Fermer le menu si on clique en dehors de celui-ci
+        if (!nav.contains(event.target) && !menuIcon.contains(event.target)) {
             nav.classList.remove('show');
         }
     });
