@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     document.addEventListener('click', function (event) {
-        if (!nav.contains(event.target) && !menuIcon.contains(event.target)) {
+        if (!nav.contains(event.target) && event.target !== menuIcon) {
             nav.classList.remove('show');
         }
     });
