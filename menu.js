@@ -5,10 +5,4 @@ document.addEventListener('DOMContentLoaded', function () {
     menuIcon.addEventListener('click', function () {
         nav.classList.toggle('show');
     });
-
-    document.addEventListener('click', function (event) {
-        if (!nav.contains(event.target)) {
-            nav.classList.remove('show');
-        }
-    });
 });
