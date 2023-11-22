@@ -3,12 +3,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const nav = document.querySelector('nav');
 
     menuIcon.addEventListener('click', function () {
-        nav.classList.toggle('show');
+        if (nav.style.display === 'block' || nav.style.display === '') {
+            nav.style.display = 'none';
+        } else {
+            nav.style.display = 'block';
+        }
     });
 
-    document.addEventListener('click', function (event) {
+    window.addEventListener('click', function (event) {
         if (!nav.contains(event.target) && event.target !== menuIcon) {
-            nav.classList.remove('show');
+            nav.style.display = 'none';
         }
     });
 });
