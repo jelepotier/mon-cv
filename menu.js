@@ -1,14 +1,8 @@
-// menu.js
-document.addEventListener("DOMContentLoaded", function () {
-    var menuIcon = document.querySelector(".menu-icon");
-    var navList = document.querySelector("nav ul");
+document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('nav');
 
-    menuIcon.addEventListener("click", function () {
-        // Basculez la visibilité des éléments du menu
-        if (navList.style.display === "block") {
-            navList.style.display = "none";
-        } else {
-            navList.style.display = "block";
-        }
+    menuIcon.addEventListener('click', function () {
+        nav.classList.toggle('show');
     });
 });
