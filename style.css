@@ -117,6 +117,11 @@ img {
         font-size: 1.5em; /* Ajustez la taille de police selon vos préférences */
     }
 
+    /* Masquer l'icône du menu par défaut sur les écrans plus grands */
+    .menu-icon {
+        display: none;
+    }
+
     /* Réduire la taille de police pour une meilleure lisibilité */
     h1, h2, h3 {
         font-size: 1.2rem;
