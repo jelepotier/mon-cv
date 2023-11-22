@@ -48,7 +48,7 @@ nav a:hover {
 
 /* Ajout de styles pour la classe 'show' */
 nav.show ul {
-    display: block !important;
+    display: block;
 }
 
 main {
@@ -85,13 +85,18 @@ img {
         width: 100%;
     }
 
-    /* Ajout de styles pour la classe 'show' pour les écrans de bureau */
+    /* Masquer le menu par défaut sur les écrans de bureau */
+    nav ul {
+        display: none;
+    }
+
+    /* Afficher le menu si la classe 'show' est présente sur les écrans de bureau */
     nav.show ul {
-        display: none !important;
+        display: block;
     }
 }
 
-/* Ajout de styles spécifiques pour les smartphones */
+/* Styles spécifiques pour les smartphones */
 @media (max-width: 767px) {
     nav ul {
         text-align: center;
@@ -146,8 +151,8 @@ img {
         display: block;
     }
 
-    /* Ajout de styles pour la classe 'show' pour les smartphones */
+    /* Afficher le menu si la classe 'show' est présente sur les smartphones */
     nav.show ul {
-        display: block !important;
+        display: block;
     }
 }
