@@ -47,7 +47,7 @@ nav a:hover {
 }
 
 /* Ajout de styles pour la classe 'show' */
-nav.show ul {
+nav.show {
     display: block;
 }
 
