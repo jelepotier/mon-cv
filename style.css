@@ -100,12 +100,14 @@ img {
 @media (max-width: 767px) {
     nav ul {
         text-align: center;
-        display: block;
     }
 
     nav li {
-        display: block;
-        margin: 0;
+        display: none; /* Masquez les éléments de la liste par défaut */
+    }
+
+    nav.show li {
+        display: block; /* Affichez les éléments de la liste lorsque la classe .show est présente */
     }
 
     nav a {
@@ -156,3 +158,4 @@ img {
         display: block;
     }
 }
+
