@@ -96,11 +96,11 @@ img {
     }
 }
 
-/* Styles spécifiques pour les smartphones */
+/* Ajout de styles spécifiques pour les smartphones */
 @media (max-width: 767px) {
     nav ul {
         text-align: center;
-        display: none;
+        display: block;
     }
 
     nav li {
