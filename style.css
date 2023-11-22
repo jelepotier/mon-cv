@@ -84,8 +84,8 @@ img {
 /* Ajout de styles spécifiques pour les smartphones */
 @media (max-width: 767px) {
     nav ul {
-        text-align: center; /* Centrer les éléments du menu */
-        display: none; /* Masquer les éléments du menu par défaut */
+        text-align: center;
+        display: none;
     }
 
     nav li {
@@ -96,16 +96,16 @@ img {
     nav a {
         display: block;
         padding: 10px;
-        margin-bottom: 5px; /* Ajouter de l'espace entre les liens du menu */
-        border-bottom: 1px solid var(--couleur-hover); /* Ajouter une bordure entre les liens */
+        margin-bottom: 5px;
+        border-bottom: 1px solid var(--couleur-hover);
         color: var(--couleur-texte);
         text-decoration: none;
         font-weight: bold;
     }
 
     nav li:last-child a {
-        margin-bottom: 0; /* Ne pas ajouter d'espace sous le dernier lien */
-        border-bottom: none; /* Ne pas ajouter de bordure sous le dernier lien */
+        margin-bottom: 0;
+        border-bottom: none;
     }
 
     .menu-icon {
@@ -114,31 +114,25 @@ img {
         text-align: center;
         margin-top: 10px;
         color: var(--couleur-texte);
-        font-size: 1.5em; /* Ajustez la taille de police selon vos préférences */
+        font-size: 1.5em;
     }
 
-    /* Masquer l'icône du menu par défaut sur les écrans plus grands */
-    .menu-icon {
-        display: none;
-    }
-
-    /* Réduire la taille de police pour une meilleure lisibilité */
     h1, h2, h3 {
         font-size: 1.2rem;
     }
 
     .atouts {
-        margin: 20px auto; /* Ajout de marge sur les petits écrans */
-        max-width: 100%; /* Assurez-vous que la largeur est à 100% sur les petits écrans */
+        margin: 20px auto;
+        max-width: 100%;
     }
 
     .trait {
-        margin-bottom: 20px; /* Réduction de la marge en bas sur les petits écrans */
+        margin-bottom: 20px;
     }
     
     .img {
-        width: 70%; /* Ajustez la valeur selon vos préférences */
-        margin: 0 auto; /* Centre l'image sur l'écran */
-        display: block; /* Assure que l'image est un élément de bloc pour appliquer la marge automatique */
+        width: 70%;
+        margin: 0 auto;
+        display: block;
     }
 }
