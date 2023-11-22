@@ -47,8 +47,8 @@ nav a:hover {
 }
 
 /* Ajout de styles pour la classe 'show' */
-nav.show {
-    display: block;
+nav.show ul {
+    display: block !important; /* Utilisation de !important pour s'assurer que cette règle prend le dessus */
 }
 
 main {
