@@ -100,7 +100,7 @@ img {
 @media (max-width: 767px) {
     /* Désactivez complètement le menu pour les smartphones */
     nav ul {
-        display: block;
+        display: none;
     }
 
     nav li {
@@ -117,7 +117,7 @@ img {
     }
 
     .menu-icon {
-        display: none; /* Masquez complètement l'icône du menu pour les smartphones */
+        display: block; /* Affichez l'icône du menu pour les smartphones */
     }
 
     h1, h2, h3 {
