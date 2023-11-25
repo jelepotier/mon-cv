@@ -87,7 +87,7 @@ img {
 
     /* Masquer le menu par défaut sur les écrans de bureau */
     nav ul {
-        display: block; /* Affichez le menu par défaut sur les écrans de bureau */
+        display: none; /* Masquez le menu par défaut sur les écrans de bureau */
     }
 
     /* Afficher le menu si la classe 'show' est présente sur les écrans de bureau */
