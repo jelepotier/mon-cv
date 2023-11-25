@@ -19,3 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Fermer le menu lorsque l'utilisateur clique en dehors du menu sur les smartphones
+document.addEventListener('click', function(event) {
+    var isClickInside = nav.contains(event.target) || menuButton.contains(event.target);
+    
+    if (!isClickInside && nav.classList.contains('show')) {
+        nav.classList.remove('show');
+    }
+});
