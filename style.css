@@ -144,3 +144,9 @@ img {
         display: block;
     }
 }
+/* Ajoutez ces styles à votre feuille de style CSS existante */
+.contact-form {
+    width: 100%;
+    height: 100vh;
+}
+
