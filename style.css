@@ -85,6 +85,13 @@ img {
         width: 100%;
     }
 
+    .reconversion {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: var(--couleur-principale); /* Couleur du texte ajustée */
+        margin-bottom: 20px;
+    }
+
     /* Masquer le menu par défaut sur les écrans de bureau */
     nav ul {
         display: none; /* Masquez le menu par défaut sur les écrans de bureau */
@@ -144,9 +151,9 @@ img {
         display: block;
     }
 }
+
 /* Ajoutez ces styles à votre feuille de style CSS existante */
 .contact-form {
     width: 100%;
     height: 100vh;
 }
-
