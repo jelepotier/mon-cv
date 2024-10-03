@@ -1,22 +1,23 @@
-/* variables de couleurs */
+/* Variables de couleurs */
 :root {
-    --couleur-principale: #333;
-    --couleur-texte: white;
-    --couleur-background: #f4f4f4;
-    --couleur-hover: #555;
+    --couleur-principale: #1a73e8; /* Bleu harmonieux */
+    --couleur-texte: #333; /* Texte en gris foncé */
+    --couleur-background: #f5f5f5; /* Fond en gris clair */
+    --couleur-hover: #1558b0; /* Bleu plus foncé pour le hover */
 }
 
-/* styles généraux */
+/* Styles généraux */
 body {
     width: 70%;
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
     background-color: var(--couleur-background);
+    color: var(--couleur-texte); /* Couleur du texte */
 }
 
 header {
     background-color: var(--couleur-principale);
-    color: var(--couleur-texte);
+    color: white; /* Texte blanc pour le contraste */
     text-align: center;
     padding: 1em;
 }
@@ -35,7 +36,7 @@ nav li {
 
 nav a {
     display: block;
-    color: var(--couleur-texte);
+    color: white; /* Texte blanc dans la navigation */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -55,6 +56,17 @@ main {
     padding: 1em;
 }
 
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white; /* Fond blanc pour les sections */
+    border-radius: 5px; /* Coins arrondis pour un design plus doux */
+}
+
+h1, h2 {
+    color: var(--couleur-principale);
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -65,6 +77,21 @@ img {
 .trait {
     border-top: 1px solid var(--couleur-principale);
     margin-top: 20px;
+}
+
+/* Styles pour les boutons d'appel à l'action */
+.btn-download {
+    background-color: var(--couleur-principale);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: var(--couleur-hover);
 }
 
 /* Styles pour les écrans de bureau */
@@ -94,7 +121,7 @@ img {
 
     /* Masquer le menu par défaut sur les écrans de bureau */
     nav ul {
-        display: none; /* Masquez le menu par défaut sur les écrans de bureau */
+        display: none;
     }
 
     /* Afficher le menu si la classe 'show' est présente sur les écrans de bureau */
@@ -103,9 +130,9 @@ img {
     }
 }
 
-/* Ajout de styles spécifiques pour les smartphones */
+/* Styles spécifiques pour les smartphones */
 @media (max-width: 767px) {
-    /* Désactivez complètement le menu pour les smartphones */
+    /* Désactiver le menu pour les smartphones */
     nav ul {
         display: none;
     }
@@ -119,7 +146,7 @@ img {
     }
 
     nav a {
-        padding: 14px 16px; /* Ajustez le padding pour correspondre à celui des écrans de bureau */
+        padding: 14px 16px;
         border-bottom: none;
     }
 
@@ -152,7 +179,7 @@ img {
     }
 }
 
-/* Ajoutez ces styles à votre feuille de style CSS existante */
+/* Styles additionnels */
 .contact-form {
     width: 100%;
     height: 100vh;
