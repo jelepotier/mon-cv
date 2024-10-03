@@ -1,23 +1,24 @@
-/* Variables de couleurs */
+/* variables de couleurs */
 :root {
-    --couleur-principale: #1a73e8; /* Bleu harmonieux */
-    --couleur-texte: #333; /* Texte en gris foncé */
-    --couleur-background: #f5f5f5; /* Fond en gris clair */
-    --couleur-hover: #1558b0; /* Bleu plus foncé pour le hover */
+    --couleur-principale: #333;
+    --couleur-texte: white;
+    --couleur-background: #f4f4f4;
+    --couleur-hover: #555;
+    --couleur-chaude: #e67e22; /* Couleur chaude (orange) */
+    --couleur-chaude-sombre: #d35400; /* Version plus sombre */
 }
 
-/* Styles généraux */
+/* styles généraux */
 body {
     width: 70%;
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
     background-color: var(--couleur-background);
-    color: var(--couleur-texte); /* Couleur du texte */
 }
 
 header {
     background-color: var(--couleur-principale);
-    color: white; /* Texte blanc pour le contraste */
+    color: var(--couleur-texte);
     text-align: center;
     padding: 1em;
 }
@@ -36,15 +37,47 @@ nav li {
 
 nav a {
     display: block;
-    color: white; /* Texte blanc dans la navigation */
+    color: var(--couleur-texte);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: background-color 0.3s; /* Transition pour un changement de couleur en douceur */
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
     background-color: var(--couleur-hover);
+}
+
+/* Amélioration avec la nouvelle palette */
+h1, h2 {
+    color: var(--couleur-chaude); /* Utilisation du orange chaleureux */
+}
+
+a {
+    color: var(--couleur-chaude); /* Harmonisation des liens */
+}
+
+/* Bouton de téléchargement */
+.btn-download {
+    background-color: var(--couleur-chaude); /* Bouton orange */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-download:hover {
+    background-color: var(--couleur-chaude-sombre); /* Orange plus foncé au survol */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* Ajout de styles pour la classe 'show' */
@@ -54,17 +87,6 @@ nav.show ul {
 
 main {
     padding: 1em;
-}
-
-section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: white; /* Fond blanc pour les sections */
-    border-radius: 5px; /* Coins arrondis pour un design plus doux */
-}
-
-h1, h2 {
-    color: var(--couleur-principale);
 }
 
 img {
@@ -79,21 +101,6 @@ img {
     margin-top: 20px;
 }
 
-/* Styles pour les boutons d'appel à l'action */
-.btn-download {
-    background-color: var(--couleur-principale);
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-.btn-download:hover {
-    background-color: var(--couleur-hover);
-}
-
 /* Styles pour les écrans de bureau */
 @media only screen and (max-width: 768px) {
     body {
@@ -105,7 +112,7 @@ img {
     }
 
     nav a {
-        padding: 12px 16px; /* Ajustez la taille du padding */
+        padding: 12px 16px;
     }
 
     img {
@@ -115,16 +122,14 @@ img {
     .reconversion {
         font-size: 1.5em;
         font-weight: bold;
-        color: var(--couleur-principale); /* Couleur du texte ajustée */
+        color: var(--couleur-principale);
         margin-bottom: 20px;
     }
 
-    /* Masquer le menu par défaut sur les écrans de bureau */
     nav ul {
         display: none;
     }
 
-    /* Afficher le menu si la classe 'show' est présente sur les écrans de bureau */
     nav.show ul {
         display: block;
     }
@@ -132,7 +137,6 @@ img {
 
 /* Styles spécifiques pour les smartphones */
 @media (max-width: 767px) {
-    /* Désactiver le menu pour les smartphones */
     nav ul {
         display: none;
     }
@@ -147,11 +151,10 @@ img {
 
     nav a {
         padding: 14px 16px;
-        border-bottom: none;
     }
 
     .menu-icon {
-        display: block; /* Affichez l'icône du menu pour les smartphones */
+        display: block;
     }
 
     h1, h2, h3 {
@@ -173,14 +176,7 @@ img {
         display: block;
     }
 
-    /* Afficher le menu si la classe 'show' est présente sur les smartphones */
     nav.show ul {
         display: block;
     }
-}
-
-/* Styles additionnels */
-.contact-form {
-    width: 100%;
-    height: 100vh;
 }
