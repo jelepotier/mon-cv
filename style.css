@@ -24,19 +24,19 @@ header {
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around; /* Aligne les éléments horizontalement */
+    display: none; /* Masquer le menu par défaut */
+    justify-content: space-around;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 h1, h2, h3 {
-    color: var(--couleur-chaude); /* Utilise la couleur chaude pour les titres */
+    color: var(--couleur-chaude);
 }
 
 nav li {
-    margin: 0 10px; /* Espace entre les éléments */
+    margin: 0 10px;
 }
 
 nav a {
@@ -60,16 +60,23 @@ nav a:hover {
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin: 0; /* Supprime le décalage */
+    margin: 0;
 }
 
 .btn-download:hover {
     background-color: var(--couleur-chaude-sombre);
 }
 
+/* Afficher le menu sur les grands écrans */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex; /* Le menu est visible et en ligne sur les grands écrans */
+    }
+}
+
 /* Ajout de styles pour la classe 'show' */
 nav.show ul {
-    display: block;
+    display: block; /* Affiche le menu lorsqu'on clique sur le hamburger */
 }
 
 main {
@@ -113,10 +120,12 @@ img {
         margin-bottom: 20px;
     }
 
+    /* Masquer le menu par défaut sur les petits écrans */
     nav ul {
         display: none;
     }
 
+    /* Afficher le menu lorsqu'on clique sur le hamburger */
     nav.show ul {
         display: block;
     }
