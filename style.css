@@ -4,8 +4,8 @@
     --couleur-texte: white;
     --couleur-background: #f4f4f4;
     --couleur-hover: #555;
-    --couleur-chaude: #e67e22; /* Couleur chaude (orange) */
-    --couleur-chaude-sombre: #d35400; /* Version plus sombre */
+    --couleur-chaude: #e67e22;
+    --couleur-chaude-sombre: #d35400;
 }
 
 /* styles généraux */
@@ -24,15 +24,15 @@ header {
 }
 
 nav ul {
+    display: flex;
+    justify-content: space-around; /* Aligne les éléments horizontalement */
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: var(--couleur-principale);
 }
 
 nav li {
-    float: left;
+    margin: 0 10px; /* Espace entre les éléments */
 }
 
 nav a {
@@ -48,36 +48,19 @@ nav a:hover {
     background-color: var(--couleur-hover);
 }
 
-/* Amélioration avec la nouvelle palette */
-h1, h2 {
-    color: var(--couleur-chaude); /* Utilisation du orange chaleureux */
-}
-
-a {
-    color: var(--couleur-chaude); /* Harmonisation des liens */
-}
-
 /* Bouton de téléchargement */
 .btn-download {
-    background-color: var(--couleur-chaude); /* Bouton orange */
+    background-color: var(--couleur-chaude);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin-top: 20px;
+    margin: 0; /* Supprime le décalage */
 }
 
 .btn-download:hover {
-    background-color: var(--couleur-chaude-sombre); /* Orange plus foncé au survol */
-}
-
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: var(--couleur-chaude-sombre);
 }
 
 /* Ajout de styles pour la classe 'show' */
