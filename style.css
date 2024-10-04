@@ -31,6 +31,10 @@ nav ul {
     padding: 0;
 }
 
+h1, h2, h3 {
+    color: var(--couleur-chaude); /* Utilise la couleur chaude pour les titres */
+}
+
 nav li {
     margin: 0 10px; /* Espace entre les éléments */
 }
